@@ -3,11 +3,11 @@ package com.betrybe.sistemadevotacao;
 /**
  * The type Pessoa candidata.
  */
-public class PessoaCandidata extends  Pessoa {
+public class PessoaCandidata extends Pessoa {
 
 
-    private int numero;
-    private int votos;
+  private int numero;
+  private int votos;
 
   /**
    * Instantiates a new Pessoa candidata.
@@ -15,20 +15,20 @@ public class PessoaCandidata extends  Pessoa {
    * @param nome   the nome
    * @param numero the numero
    */
-  public  PessoaCandidata(String  nome, int numero) {
-      this.nome = nome;
-      this.numero = numero;
-      this.votos = 0;
-    }
+  public PessoaCandidata(String nome, int numero) {
+    this.nome = nome;
+    this.numero = numero;
+    this.votos = 0;
+  }
 
   /**
    * Gets numero.
    *
    * @return the numero
    */
-  public  int getNumero() {
-      return  numero;
-    }
+  public int getNumero() {
+    return numero;
+  }
 
   /**
    * Sets numero.
@@ -36,22 +36,22 @@ public class PessoaCandidata extends  Pessoa {
    * @param numero the numero
    */
   public void setNumero(int numero) {
-      this.numero = numero;
-    }
+    this.numero = numero;
+  }
 
   /**
    * Gets votos.
    *
    * @return the votos
    */
-  public  int getVotos() {
-      return  votos;
-    }
+  public int getVotos() {
+    return votos;
+  }
 
   /**
    * Receber voto.
    */
-  public  void receberVoto() {
-      this.votos += 1;
-    }
+  public void receberVoto() {
+    this.votos += 1;
+  }
 }

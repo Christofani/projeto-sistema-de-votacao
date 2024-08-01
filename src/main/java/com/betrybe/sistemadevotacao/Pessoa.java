@@ -8,12 +8,12 @@ public abstract class Pessoa {
   /**
    * The Nome.
    */
-  protected  String nome;
+  protected String nome;
 
   /**
    * Instantiates a new Pessoa.
    */
-  public  Pessoa() {
+  public Pessoa() {
   }
 
   /**
@@ -22,7 +22,7 @@ public abstract class Pessoa {
    * @return the nome
    */
   public String getNome() {
-    return  nome;
+    return nome;
   }
 
   /**
