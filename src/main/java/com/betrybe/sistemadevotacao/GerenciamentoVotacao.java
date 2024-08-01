@@ -23,12 +23,30 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
 
   @Override
   public void cadastrarPessoaCandidata(String nome, int numero) {
-    // Implementação futura
+    for (PessoaCandidata candidata : pessoasCandidatas) {
+      if (candidata.getNumero() == numero) {
+        System.out.println("Número da pessoa candidata já utilizado!");
+        return;
+      }
+    }
+
+    PessoaCandidata novaCanditada = new PessoaCandidata(nome, numero);
+
+    pessoasCandidatas.add(novaCanditada);
   }
 
   @Override
   public void cadastrarPessoaEleitora(String nome, String cpf) {
-    // Implementação futura
+    for (PessoaEleitora eleitora : pessoasEleitoras) {
+      if (eleitora.getCpf().equals(cpf)) {
+        System.out.println("Pessoa eleitora já cadastrada!");
+        return;
+      }
+    }
+
+    PessoaEleitora novaEleitora = new PessoaEleitora(nome, cpf);
+
+    pessoasEleitoras.add(novaEleitora);
   }
 
   @Override
